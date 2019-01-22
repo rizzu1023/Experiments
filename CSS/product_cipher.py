@@ -22,8 +22,17 @@ def transpose(code):
 	
 	
 def matrix_cipher(code):
-	key = input("Enter key for matrix_cipher(in alphabate) : ")
-	l= len(key)
+	key = input("Enter key for matrix_cipher(in alphabate & without space) : ")
+	key_li = list(key)
+	l=len(key_li)
+	mod = len(code)%len(key_li)
+	for k in range(len(key)-mod):
+		code.append("*")
+	print(len(key_li))
+	print(len(code)//len(key_li))
+	mc_li = [[0]*(len(key_li))]*(len(code)//len(key_li))
+	print(mc_li)
+
 	
 
 
@@ -37,6 +46,7 @@ def main():
 	if(m==1):
 		rail_fence(code)
 	elif(m==2):
+		pass
 		#transpose(code)
 	elif(m==3):
 		matrix_cipher(code)
