@@ -1,0 +1,6 @@
+MACRO
+EVAL &A ,&N ,&I ,&OP=SUB
+LCL  &C ,&E
+LOAD A
+&op  N
+END
