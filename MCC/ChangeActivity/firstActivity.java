@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class buttonClick extends AppCompatActivity {
+public class firstActivity extends AppCompatActivity {
 
 
     public void changeActivity(View view){
